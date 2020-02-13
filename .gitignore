@@ -10,6 +10,12 @@
 *.userosscache
 *.sln.docstates
 
+# nono stuffs
+*.csproj
+/Assets/TextMesh Pro/
+/Library/
+/Logs/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
