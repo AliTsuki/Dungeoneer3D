@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 1320156232832076631}
   - component: {fileID: 1016265685294622163}
   - component: {fileID: 5776382499849911990}
+  - component: {fileID: 3416733472743355549}
   m_Layer: 0
   m_Name: Gravestone_Round
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1320156232832076631
 Transform:
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3416733472743355549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908741146088670371}
+  m_Material: {fileID: 13400000, guid: 5d37bb54d5e18634790eb96d9bacde48, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009999998, y: 0.004999999, z: 0.016338253}
+  m_Center: {x: 0.0000013362151, y: -1.164153e-10, z: 0.0016368356}

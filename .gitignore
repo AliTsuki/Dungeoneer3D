@@ -13,9 +13,12 @@
 # nono stuffs
 *.csproj
 /Assets/TextMesh Pro/
+/Assets/Samples/
 /Library/
 /Logs/
 /obj/
+/Temp/
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

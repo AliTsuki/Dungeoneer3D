@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 5713815590411264746}
   - component: {fileID: 8600865348343485593}
   - component: {fileID: 2669883557956055491}
+  - component: {fileID: 3639486768277641618}
   m_Layer: 0
   m_Name: Fence_Segment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5713815590411264746
 Transform:
@@ -80,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3639486768277641618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243250006571843626}
+  m_Material: {fileID: 13400000, guid: 5d37bb54d5e18634790eb96d9bacde48, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06, y: 0.009999993, z: 0.032187603}
+  m_Center: {x: 0.000000009313226, y: -0.000000021420416, z: 0.00010297166}
 --- !u!1 &8085415014615876370
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +110,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2191169785937221094
 Transform:

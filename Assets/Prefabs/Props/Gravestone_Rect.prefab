@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 1531752668072807620}
   - component: {fileID: 6508988349556288185}
   - component: {fileID: 3836823208750570357}
+  - component: {fileID: 3717386849459378799}
   m_Layer: 0
   m_Name: Gravestone_Rect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1531752668072807620
 Transform:
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3717386849459378799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541206638481640126}
+  m_Material: {fileID: 13400000, guid: 5d37bb54d5e18634790eb96d9bacde48, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.0021219433, z: 0.015261009}
+  m_Center: {x: 0, y: 0, z: 0}

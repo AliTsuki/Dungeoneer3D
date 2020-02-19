@@ -11,12 +11,15 @@ GameObject:
   - component: {fileID: 8128831453178765765}
   - component: {fileID: 6870470330052283048}
   - component: {fileID: 1383298362712598255}
+  - component: {fileID: 2034351391693844205}
+  - component: {fileID: 1643945647960608709}
+  - component: {fileID: 4932638079292520725}
   m_Layer: 0
   m_Name: Fence_Archway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8128831453178765765
 Transform:
@@ -79,3 +82,42 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2034351391693844205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813841290640821472}
+  m_Material: {fileID: 13400000, guid: 5d37bb54d5e18634790eb96d9bacde48, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009931874, y: 0.010664502, z: 0.031613614}
+  m_Center: {x: 0.03130255, y: 0.00016658232, z: -0.005405029}
+--- !u!65 &1643945647960608709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813841290640821472}
+  m_Material: {fileID: 13400000, guid: 5d37bb54d5e18634790eb96d9bacde48, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010001141, y: 0.010664502, z: 0.031515706}
+  m_Center: {x: -0.03148249, y: 0.00016658232, z: -0.005453982}
+--- !u!65 &4932638079292520725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813841290640821472}
+  m_Material: {fileID: 13400000, guid: 5d37bb54d5e18634790eb96d9bacde48, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.053295713, y: 0.009999997, z: 0.0074892594}
+  m_Center: {x: -0.00006900132, y: -0.00000003539026, z: 0.014264166}
