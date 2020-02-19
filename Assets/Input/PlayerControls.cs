@@ -27,9 +27,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Rotate Camera"",
+                    ""name"": ""Rotate Camera Controller"",
                     ""type"": ""Value"",
                     ""id"": ""638f6c77-7e5f-48e6-8527-48c97ad93d8a"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Rotate Camera Mouse"",
+                    ""type"": ""Value"",
+                    ""id"": ""624d28e9-cf80-4668-bbef-77bc056f000b"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -56,79 +64,13 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""WASD"",
-                    ""id"": ""fda94045-4d9b-4a42-b455-d816996225da"",
-                    ""path"": ""2DVector(mode=1)"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""9c435a22-0c83-4533-9e59-f3c4f24ecaa4"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Main Control Scheme"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""f2af4a59-cf19-4ef0-9837-c9974c547ed7"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Main Control Scheme"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""32c10e9c-ad5e-4647-aa6a-e23ed269492e"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Main Control Scheme"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""c6778347-bd90-4e7a-a9b6-d8a1b1472f03"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Main Control Scheme"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
-                    ""id"": ""b32c9040-115b-489f-b7b6-7805d0c54956"",
+                    ""id"": ""ac99fa74-3e5b-4d33-b9b9-aee063097147"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Main Control Scheme"",
-                    ""action"": ""Rotate Camera"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2831a23f-1a9e-4d12-bbc1-4abd0cfed8e0"",
-                    ""path"": ""<Mouse>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Main Control Scheme"",
-                    ""action"": ""Rotate Camera"",
+                    ""action"": ""Rotate Camera Controller"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -153,6 +95,72 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Toggle Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ac023be-d1b5-4a45-9ef0-2a81ea592790"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Main Control Scheme"",
+                    ""action"": ""Rotate Camera Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""f9394363-0448-4f5c-99a4-9e59cc064965"",
+                    ""path"": ""2DVector(mode=1)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f3fb7474-1320-4b22-9216-8d226ee5941d"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Main Control Scheme"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""cbe0cd71-3047-47e5-a2ed-e40f6742133e"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Main Control Scheme"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""cb9fea24-8f39-4df7-a212-517253a18678"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Main Control Scheme"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""dd82deb1-133f-484f-9f4e-c2d611698ca4"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Main Control Scheme"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -211,7 +219,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // Gameplay
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
-        m_Gameplay_RotateCamera = m_Gameplay.FindAction("Rotate Camera", throwIfNotFound: true);
+        m_Gameplay_RotateCameraController = m_Gameplay.FindAction("Rotate Camera Controller", throwIfNotFound: true);
+        m_Gameplay_RotateCameraMouse = m_Gameplay.FindAction("Rotate Camera Mouse", throwIfNotFound: true);
         m_Gameplay_ToggleMenu = m_Gameplay.FindAction("Toggle Menu", throwIfNotFound: true);
         // Menus
         m_Menus = asset.FindActionMap("Menus", throwIfNotFound: true);
@@ -266,14 +275,16 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Gameplay;
     private IGameplayActions m_GameplayActionsCallbackInterface;
     private readonly InputAction m_Gameplay_Move;
-    private readonly InputAction m_Gameplay_RotateCamera;
+    private readonly InputAction m_Gameplay_RotateCameraController;
+    private readonly InputAction m_Gameplay_RotateCameraMouse;
     private readonly InputAction m_Gameplay_ToggleMenu;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
         public GameplayActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
-        public InputAction @RotateCamera => m_Wrapper.m_Gameplay_RotateCamera;
+        public InputAction @RotateCameraController => m_Wrapper.m_Gameplay_RotateCameraController;
+        public InputAction @RotateCameraMouse => m_Wrapper.m_Gameplay_RotateCameraMouse;
         public InputAction @ToggleMenu => m_Wrapper.m_Gameplay_ToggleMenu;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
@@ -287,9 +298,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnMove;
-                @RotateCamera.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCamera;
-                @RotateCamera.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCamera;
-                @RotateCamera.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCamera;
+                @RotateCameraController.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCameraController;
+                @RotateCameraController.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCameraController;
+                @RotateCameraController.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCameraController;
+                @RotateCameraMouse.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCameraMouse;
+                @RotateCameraMouse.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCameraMouse;
+                @RotateCameraMouse.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotateCameraMouse;
                 @ToggleMenu.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnToggleMenu;
                 @ToggleMenu.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnToggleMenu;
                 @ToggleMenu.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnToggleMenu;
@@ -300,9 +314,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @RotateCamera.started += instance.OnRotateCamera;
-                @RotateCamera.performed += instance.OnRotateCamera;
-                @RotateCamera.canceled += instance.OnRotateCamera;
+                @RotateCameraController.started += instance.OnRotateCameraController;
+                @RotateCameraController.performed += instance.OnRotateCameraController;
+                @RotateCameraController.canceled += instance.OnRotateCameraController;
+                @RotateCameraMouse.started += instance.OnRotateCameraMouse;
+                @RotateCameraMouse.performed += instance.OnRotateCameraMouse;
+                @RotateCameraMouse.canceled += instance.OnRotateCameraMouse;
                 @ToggleMenu.started += instance.OnToggleMenu;
                 @ToggleMenu.performed += instance.OnToggleMenu;
                 @ToggleMenu.canceled += instance.OnToggleMenu;
@@ -355,7 +372,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface IGameplayActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnRotateCamera(InputAction.CallbackContext context);
+        void OnRotateCameraController(InputAction.CallbackContext context);
+        void OnRotateCameraMouse(InputAction.CallbackContext context);
         void OnToggleMenu(InputAction.CallbackContext context);
     }
     public interface IMenusActions
