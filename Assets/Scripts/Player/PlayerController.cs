@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float MovementMaxSpeed = 4f;
     public float MovementSpeedDecayRate = 0.9f;
     public float CharacterRotationSpeed = 0.1f;
+    public bool CameraFollow = false;
     public Vector2 CamRotationSpeedController = new Vector2(1f, 1f);
     public Vector2 CamRotationSpeedMouse = new Vector2(1f, 1f);
 
@@ -77,12 +78,18 @@ public class PlayerController : MonoBehaviour
         {
             this.Accelerate();
             this.Rotate();
-            CineCam.m_RecenterToTargetHeading.m_enabled = true;
+            if(this.CameraFollow == true)
+            {
+                CineCam.m_RecenterToTargetHeading.m_enabled = true;
+            }
         }
         else
         {
             this.DecayMovementSpeed();
-            CineCam.m_RecenterToTargetHeading.m_enabled = false;
+            if(this.CameraFollow == true)
+            {
+                CineCam.m_RecenterToTargetHeading.m_enabled = false;
+            }
         }
     }
 
